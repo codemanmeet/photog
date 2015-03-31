@@ -81,6 +81,18 @@
             ReferencedContainer = "container:Photog.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "PARSE_KEY"
+            value = "NZzz9KDtPVL6ZwKgGoyeVNHE29vIDCtF5F66REY5"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "PARSE_CLIENT_KEY"
+            value = "0M4rxLwvHNonHutCeqgjqAa6iT9HVobbI6uJrbnm"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

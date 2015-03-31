@@ -42,7 +42,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupParse(){
-        Parse.setApplicationId("NZzz9KDtPVL6ZwKgGoyeVNHE29vIDCtF5F66REY5", clientKey: "0M4rxLwvHNonHutCeqgjqAa6iT9HVobbI6uJrbnm")
+        let dic = NSProcessInfo.processInfo().environment
+        let clientKeyConstant = dic["PARSE_CLIENT_KEY"] as? String
+        let mainKeyConstant = dic["PARSE_KEY"] as? String
+        Parse.setApplicationId(mainKeyConstant, clientKey: clientKeyConstant)
         //var testObject = PFObject(className: "TestObject")
         //testObject["foo"] = "boo"
         //testObject.saveInBackground();
