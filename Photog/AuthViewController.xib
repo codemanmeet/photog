@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController" customModule="Photog" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="Hm2-D7-b47" id="6Ko-sx-QbM"/>
+                <outlet property="passwordTextField" destination="hzy-Am-jkm" id="5oS-9E-pvb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,6 +24,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="5oG-Si-vcS"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hzy-Am-jkm">
                     <rect key="frame" x="0.0" y="45" width="600" height="44"/>
@@ -31,6 +36,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="0e9-ah-Wb7"/>
+                    </connections>
                 </textField>
             </subviews>
             <color key="backgroundColor" red="0.81874173280423279" green="0.81874173280423279" blue="0.81874173280423279" alpha="1" colorSpace="calibratedRGB"/>
